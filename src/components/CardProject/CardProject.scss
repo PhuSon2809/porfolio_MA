@@ -1,0 +1,64 @@
+@use "../../scss/" as *;
+
+.card {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 20px !important;
+  box-shadow: $shadow-light;
+
+  .card-inner {
+    @include flex(flex-start, unset, row);
+    gap: 30px;
+
+    .card-image {
+        @include flex(center, unset, row);
+      max-width: 272px;
+      border-radius: 40px;
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+
+    .card-content {
+      .tag-list {
+        @include flex(center, unset, row);
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
+      .title {
+        line-height: 1.2;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: $pink-light;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 3px;
+        }
+      }
+
+      .paragraph {
+        margin-bottom: 1.25rem;
+        line-height: 1.8;
+        height: auto;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+
+      .time {
+        @include flex(center, unset, row);
+        gap: 5px;
+        color: #8a8c8d;
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}

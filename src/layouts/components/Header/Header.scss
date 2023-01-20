@@ -1,0 +1,45 @@
+@use "../../../scss/" as *;
+
+.header {
+  @include flex(center, space-between, row);
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  border-radius: 20px;
+
+  .brand {
+    @include flex(center, unset, row);
+    .brand-name {
+      font-size: 1.7rem;
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+  }
+
+  .navbar {
+    .menu {
+      @include flex(center, unset, row);
+      gap: 20px;
+      list-style: none;
+
+      .item {
+        font-size: 17px;
+        text-decoration: none;
+        color: $text-color-main-white;
+        transition: all 0.25s;
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: $pink-dark;
+          transition: all 0.25s;
+        }
+      }
+
+      .cv-btn {
+        @include flex(center, unset, row);
+        gap: 10px;
+      }
+    }
+  }
+}
