@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import Tag from "../Tag";
-import "./CardProject.scss";
 import { ThemeContext } from "../../features/ThemeContext";
+import "./CardProject.scss";
+import { Link } from "react-router-dom";
 
 function CardProject() {
   const { theme, dark } = useContext(ThemeContext);
@@ -15,8 +16,13 @@ function CardProject() {
         </div>
         <div className="card-content">
           <div className="tag-list">
-            <Tag active>Nation</Tag>
-            <Tag active>Nation</Tag>
+            <Link
+              className="tag"
+              style={{ background: theme.tagColor, color: theme.color }}
+            >
+              <FiberManualRecordIcon fontSize="10px" />
+              Nation
+            </Link>
           </div>
           <p className="title" style={{ color: !dark ? "#000" : "#fff" }}>
             Autumn is a second spring when every leaf is a flower
@@ -27,7 +33,7 @@ function CardProject() {
             me how heartily I should despise almost every body an
           </p>
           <div className="time">
-            <CalendarMonthIcon fontSize="small"/> May 2, 2022
+            <CalendarMonthIcon fontSize="small" /> May 2, 2022
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@
     gap: 30px;
 
     .card-image {
-        @include flex(center, unset, row);
+      @include flex(center, unset, row);
       max-width: 272px;
       border-radius: 40px;
 
@@ -26,6 +26,18 @@
         @include flex(center, unset, row);
         gap: 10px;
         margin-bottom: 12px;
+
+        .tag {
+          @include flex(center, unset, row);
+          gap: 5px;
+          width: fit-content;
+          height: 32px;
+          line-height: 32px;
+          padding: 0 12px;
+          font-size: 0.875rem;
+          border-radius: 20px;
+          text-decoration: none;
+        }
       }
 
       .title {
