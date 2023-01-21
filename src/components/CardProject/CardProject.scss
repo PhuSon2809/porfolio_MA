@@ -3,7 +3,7 @@
 .card {
   padding: 2rem;
   margin-bottom: 3rem;
-  border-radius: 20px !important;
+  border-radius: 20px;
   box-shadow: $shadow-light;
 
   .card-inner {
@@ -13,11 +13,19 @@
     .card-image {
       @include flex(center, unset, row);
       max-width: 272px;
-      border-radius: 40px;
+      border-radius: 20px;
+      overflow: hidden;
 
       img {
         width: 100%;
         border-radius: 20px;
+        transition: all 0.25s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -48,7 +56,7 @@
 
         &:hover {
           text-decoration: underline;
-          text-decoration-color: $pink-light;
+          text-decoration-color: $pink-dark;
           text-decoration-thickness: 2px;
           text-underline-offset: 3px;
         }
