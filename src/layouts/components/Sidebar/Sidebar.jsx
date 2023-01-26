@@ -10,6 +10,7 @@ import { Button, IconButton } from "@mui/material";
 import { ThemeContext } from "../../../features/ThemeContext";
 import Tag from "../../../components/Tag/Tag";
 import "./Sidebar.scss";
+import { position } from "../../../assets/data/position";
 
 const SendButton = styled(Button)({
   padding: "0 1rem",
@@ -43,11 +44,11 @@ function Sidebar() {
           </p>
 
           <div className="tags">
-            <Tag>Event Leader</Tag>
-            <Tag>Nation</Tag>
-            <Tag>Hera</Tag>
-            <Tag>Event </Tag>
-            <Tag>Event Leader</Tag>
+            {position.map((position) => (
+              <Tag key={position.id} variant={position.variant}>
+                {position.title}
+              </Tag>
+            ))}
           </div>
         </div>
 

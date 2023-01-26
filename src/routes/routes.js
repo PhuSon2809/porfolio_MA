@@ -1,9 +1,9 @@
 import config from "../config";
 import Home from "../pages/Home/Home";
 import Detail from "../pages/Detail/Detail";
-import Contact from "../pages/Contact/Contact";
 import NotFound from "../pages/NotFound404/NotFound";
 import { HeaderFooterOnly } from "../layouts";
+import Activities from "../pages/Activities/Activities";
 
 const publicRoutes = [
   {
@@ -15,8 +15,8 @@ const publicRoutes = [
     component: Detail,
   },
   {
-    path: config.routes.contact,
-    component: Contact,
+    path: config.routes.activities,
+    component: Activities,
     layout: HeaderFooterOnly,
   },
   {

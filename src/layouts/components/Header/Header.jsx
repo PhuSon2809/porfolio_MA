@@ -40,7 +40,7 @@ const navLinks = [
     url: "#porfolio",
   },
   {
-    display: "Contact",
+    display: "Activities",
     url: config.routes.contact,
   },
 ];

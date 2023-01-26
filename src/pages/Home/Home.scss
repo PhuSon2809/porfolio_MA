@@ -4,4 +4,29 @@
   width: 100%;
   padding-right: 20px;
   min-height: 10px;
+
+  .place {
+    .big-tile {
+      @include flex(center, unset, row);
+      gap: 7px;
+      margin-bottom: 10px;
+
+      .inner-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    .box-content {
+      padding-left: 35px;
+      margin-bottom: 20px;
+
+      .content{
+        margin-bottom: 0.25rem;
+        line-height: 1.8;
+        height: auto;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
 }

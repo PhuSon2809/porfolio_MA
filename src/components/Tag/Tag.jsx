@@ -27,7 +27,19 @@ function Tag({ children, variant, to, className }) {
         className={className ? `tag-wrapper ${className}` : `tag-wrapper`}
         style={{ background: theme.tagColor, color: theme.color }}
       >
-        <FiberManualRecordIcon fontSize="10px" />
+        <FiberManualRecordIcon
+          fontSize="10px"
+          sx={{
+            color:
+              variant === "leader"
+                ? "#e10689"
+                : variant === "writer"
+                ? "#04baf6"
+                : variant === "external"
+                ? "#f18509"
+                : "#1dbf2f",
+          }}
+        />
         {children}
       </TagComponent>
     </Link>

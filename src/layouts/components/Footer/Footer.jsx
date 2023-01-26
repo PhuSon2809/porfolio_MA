@@ -8,6 +8,7 @@ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import Tag from "../../../components/Tag/Tag";
 import { ThemeContext } from "../../../features/ThemeContext";
 import "./Footer.scss";
+import { position } from "../../../assets/data/position";
 
 function Footer() {
   const { theme, dark } = useContext(ThemeContext);
@@ -25,7 +26,7 @@ function Footer() {
           <Grid item md={4}>
             <div className="brand">
               <IconButton sx={{ p: 0, mr: 1, color: "#fb2576" }}>
-                <AutoAwesomeIcon  sx={{fontSize: "3rem"}}/>
+                <AutoAwesomeIcon sx={{ fontSize: "3rem" }} />
               </IconButton>
               <Typography
                 variant="h6"
@@ -46,11 +47,11 @@ function Footer() {
               </p>
 
               <div className="tags">
-                <Tag>Event Leader</Tag>
-                <Tag>Nation</Tag>
-                <Tag>Hera</Tag>
-                <Tag>Event </Tag>
-                <Tag>Event Leader</Tag>
+                {position.map((position) => (
+                  <Tag key={position.id} variant={position.variant}>
+                    {position.title}
+                  </Tag>
+                ))}
               </div>
             </div>
           </Grid>

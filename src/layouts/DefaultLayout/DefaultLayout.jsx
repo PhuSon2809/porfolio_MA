@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Grid } from "@mui/material";
+import { useLocation } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Sidebar from "../components/Sidebar";
@@ -10,12 +11,19 @@ import Skills from "../components/Skills/Skills";
 
 function DefaultLayout({ children }) {
   const { theme } = useContext(ThemeContext);
+  const location = useLocation();
+  console.log(location);
+
   return (
     <div style={{ background: theme.backgroundContainer }}>
       <div className="containers">
         <Header />
-        <Infor />
-        <Skills />
+        {location.pathname === "/" && (
+          <>
+            <Infor />
+            <Skills />
+          </>
+        )}
         <Grid container sx={{ paddingTop: "40px" }}>
           <Grid item md={8}>
             {children}

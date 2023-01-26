@@ -1,7 +1,7 @@
 const routes = {
   home: "/",
   detail: "/detail/:id",
-  contact: "/contact",
+  activities: "/activities",
   notFound: "*",
 };
 
