@@ -1,0 +1,48 @@
+@use "../../../scss/" as *;
+
+.skills {
+  @include flex(center, unset, column);
+  gap: 30px;
+  padding: 60px 20px 20px 20px;
+
+  .row-one,
+  .row-tow {
+    @include flex(center, space-between, row);
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+
+    .box {
+      @include flex(center, unset, row);
+      gap: 15px;
+      height: fit-content;
+      width: 280px;
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 0.25s ease-in-out;
+      box-shadow: 3px 3px 4px 1px  #fb5091;
+
+      .image-box {
+        @include flex(center, unset, unset);
+        height: 70px;
+        width: 70px;
+        background: $pink-light;
+        border-radius: 7px;
+
+        img {
+          // height: 100%;
+          width: 70px;
+          border-radius: 7px;
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

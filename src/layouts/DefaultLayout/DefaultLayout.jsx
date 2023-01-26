@@ -5,6 +5,8 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Sidebar from "../components/Sidebar";
 import { ThemeContext } from "../../features/ThemeContext";
+import Infor from "../components/Infor/Infor";
+import Skills from "../components/Skills/Skills";
 
 function DefaultLayout({ children }) {
   const { theme } = useContext(ThemeContext);
@@ -12,6 +14,8 @@ function DefaultLayout({ children }) {
     <div style={{ background: theme.backgroundContainer }}>
       <div className="containers">
         <Header />
+        <Infor />
+        <Skills />
         <Grid container sx={{ paddingTop: "40px" }}>
           <Grid item md={8}>
             {children}

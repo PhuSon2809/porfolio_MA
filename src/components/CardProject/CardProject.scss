@@ -13,6 +13,7 @@
     .card-image {
       @include flex(center, unset, row);
       max-width: 272px;
+      max-height: 272px;
       border-radius: 20px;
       overflow: hidden;
 

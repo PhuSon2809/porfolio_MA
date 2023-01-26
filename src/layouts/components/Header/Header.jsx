@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import { Avatar, IconButton, Typography } from "@mui/material";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { IconButton, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
@@ -53,12 +54,8 @@ function Header() {
       style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}
     >
       <div className="brand">
-        <IconButton sx={{ p: 0, mr: 1 }}>
-          <Avatar
-            alt="My Anh"
-            src="/static/images/avatar/2.jpg"
-            sx={{ border: "2px solid #fb2576" }}
-          />
+        <IconButton sx={{ p: 0, mr: 1, color: "#fb2576" }}>
+          <AutoAwesomeIcon fontSize="large" />
         </IconButton>
         <Typography
           variant="h6"

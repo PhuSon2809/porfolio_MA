@@ -11,7 +11,7 @@ function CardProject() {
     <div className="card" style={{ background: theme.backgroundColor }}>
       <div className="card-inner">
         <div className="card-image">
-          <img src="https://scontent.fvca1-2.fna.fbcdn.net/v/t39.30808-6/301312635_826216795453692_131188975397824987_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BTFHTvg8AbkAX8Eqizf&_nc_ht=scontent.fvca1-2.fna&oh=00_AfB2YTWbdJjTwL_CSfj0grOe0s8xXHUYq-ukWsq_Jubd2Q&oe=63CEE62D" />
+          <img src="https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/279138987_742571113818261_8560419225783568442_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=5Bwc0z5KVLEAX8x8hNV&_nc_ht=scontent.fsgn13-2.fna&oh=00_AfDO05OccRxSS4571ipGItnULVuhB8z38rKrx0TuM99WnA&oe=63D458BC" />
         </div>
         <div className="card-content">
           <div className="tag-list">
