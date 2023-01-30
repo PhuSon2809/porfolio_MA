@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { ThemeContext } from "../../features/ThemeContext";
 import Tag from "../Tag/Tag";
 import "./CardProject.scss";
-import { Link } from "react-router-dom";
 
 function CardProject({ project }) {
   const { theme, dark } = useContext(ThemeContext);

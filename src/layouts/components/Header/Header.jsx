@@ -41,7 +41,7 @@ const navLinks = [
   },
   {
     display: "Activities",
-    url: config.routes.contact,
+    url: config.routes.activities,
   },
 ];
 
