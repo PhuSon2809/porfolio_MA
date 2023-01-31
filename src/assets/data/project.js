@@ -14,7 +14,7 @@ export const listProjects = [
         title: "Manage PG&PB",
         timeStart: "September 2022 - Now",
         timeEnd: "Present",
-        positions: [{ id: 1, title: "PG&PB Manager", variant: "pg" }],
+        positions: [],
         discription: [
           "Recruit and Manage a team of 18 PG/PB at Galaxy Cinemas nationwide.",
           <>
