@@ -1,0 +1,74 @@
+@use "../../../scss/" as *;
+
+.certificate-inner {
+  padding-bottom: 50px;
+
+  .certificate-wrapper {
+    padding-right: 25px;
+
+    .content-certi {
+      .name {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .time {
+        @include flex(center, unset, row);
+      }
+    }
+  }
+
+  .course-wrapper {
+    padding-left: 25px;
+
+    .course-content {
+      @include flex(flex-start, unset, row);
+      gap: 20px;
+      height: 200px;
+
+      img {
+        height: 100%;
+      }
+
+      .content {
+        .title {
+          line-height: 1.2;
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 15px;
+
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: $pink-dark;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+          }
+        }
+
+        p {
+          margin-bottom: 15px;
+        }
+
+        .time {
+          @include flex(center, unset, row);
+          gap: 5px;
+          color: #5e5f5f;
+          font-size: 0.9rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .certificate,
+  .course {
+    padding: 2rem;
+    border-radius: 20px;
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+}

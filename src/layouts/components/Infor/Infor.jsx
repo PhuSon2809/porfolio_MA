@@ -66,16 +66,10 @@ function Infor() {
               <img src="/images/activities/myanh.jpg" alt="infor" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="/images/banner/banner1.jpg"
-                alt="infor"
-              />
+              <img src="/images/banner/banner1.jpg" alt="infor" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.6435-9/107986391_301940647881312_2663326676031323544_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_-7Az6H4EL0AX_0Bqf8&tn=r9klAhFbrvO_FJ86&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfAo7X87sHQNcY8j8htIUhHjn6iuIv8OERCXcWa8BsYo0Q&oe=63F881AD"
-                alt="infor"
-              />
+              <img src="/images/banner/banner3.jpg" alt="infor" />
             </SwiperSlide>
           </Swiper>
         </div>

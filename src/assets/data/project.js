@@ -17,7 +17,11 @@ export const listProjects = [
         positions: [{ id: 1, title: "PG&PB Manager", variant: "pg" }],
         discription: [
           "Recruit and Manage a team of 18 PG/PB at Galaxy Cinemas nationwide.",
-          `Organize training sessions, ensure project quality, problem solving: Cost/Redeem decreased <strong>54,7% (From 15.000vnđ to 6.800vnd).</strong>`,
+          <>
+            Organize training sessions, ensure project quality, problem solving:
+            Cost/Redeem decreased{" "}
+            <strong>54,7% (From 15.000vnđ to 6.800vnd).</strong>
+          </>,
         ],
         image: "/images/galaxy.jpg",
         video: "",
@@ -37,7 +41,10 @@ export const listProjects = [
         ],
         discription: [
           "Admin Galaxy Play's Shopee Mall account.",
-          "Posting products for sale, replying to customer messages, problem solving: response rate increased from 58% to 70%.",
+          <>
+            Posting products for sale, replying to customer messages, problem
+            solving: response rate increased <strong>from 58% to 70%.</strong>
+          </>,
         ],
         image: "/images/galaxy.jpg",
         video: "",
@@ -63,11 +70,14 @@ export const listProjects = [
           "Collaborate with other organizers to build up a project plan and marketing plan.",
           "Managed a 8-member cross-functional (design, content writter, support) team toward the successful launch of the event..",
           "Manage budget, ensure project quality.",
-          "Expected: 2.000 participants.",
+          <>
+            Expected: <strong>2.000 participants.</strong>
+          </>,
         ],
         image: "/images/fcamp/fcamp1.jpg",
         cover: "/images/fcamp/fcamp2.jpg",
-        video: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FFCampHCM%2Fvideos%2F677248657442579%2F&show_text=false&width=560&t=0",
+        video:
+          "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FFCampHCM%2Fvideos%2F677248657442579%2F&show_text=false&width=560&t=0",
         // video: "https://www.youtube.com/embed/WEdaetOyhtM",
         listImage: [
           {
@@ -139,7 +149,12 @@ export const listProjects = [
         ],
         discription: [
           "FPT-ALK is a talk show sharing interesting experiences, especially for new students.",
-          "Media Planner and content writer: achieved a total of 19.000+ reaches, 800+ reactions, 160 registration forms.",
+          <>
+            Media Planner and content writer: achieved a total of{" "}
+            <strong>
+              19.000+ reaches, 800+ reactions, 160 registration forms.
+            </strong>
+          </>,
           "Worked with external and internal partners to develop and execute content strategies.",
           "Contacted and collaborated with 4 guest speakers with extensive experience in the academic field.",
         ],
@@ -178,9 +193,20 @@ export const listProjects = [
         ],
         discription: [
           "Xuân Ấm Áp is an annual charity event to help people in difficult circumstances.",
-          "Media Planner, created, edited, and proofread text content: achieved a total of 35.800+ reaches, 1000+ reactions total amount earned 21.887.000 VND.",
-          "Direct collaboration with partners, as a representation of the partnership agreement: earned 8.800.000 VND.",
-          "Advertised products on media publications such as banner, posters, leaflets... Introduced, consult, sold goods and food at the Shop: earned 8.300.000 VND.",
+          <>
+            Media Planner, created, edited, and proofread text content: achieved
+            a total of <strong>35.800+ reaches, 1000+ reactions</strong> total
+            amount earned <strong>21.887.000 VND.</strong>
+          </>,
+          <>
+            Direct collaboration with partners, as a representation of the
+            partnership agreement: earned <strong>8.800.000 VND.</strong>
+          </>,
+          "Advertised products on media publications such as banner, posters, leaflets...",
+          <>
+            Introduced, consult, sold goods and food at the Shop: earned{" "}
+            <strong>8.300.000 VND</strong>.
+          </>,
         ],
         image: "/images/xaa/xaa1.png",
         cover: "/images/xaa/xaa2.png",

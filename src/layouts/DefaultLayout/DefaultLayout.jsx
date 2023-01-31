@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
-import PropTypes from "prop-types";
 import { Grid } from "@mui/material";
+import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Sidebar from "../components/Sidebar";
 import { ThemeContext } from "../../features/ThemeContext";
-import Infor from "../components/Infor/Infor";
-import Skills from "../components/Skills/Skills";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Infor from "../components/Infor";
+import Sidebar from "../components/Sidebar";
+import Skills from "../components/Skills";
+import Certificates from "../components/Certificates";
 
 function DefaultLayout({ children }) {
   const { theme } = useContext(ThemeContext);
@@ -32,6 +33,7 @@ function DefaultLayout({ children }) {
             <Sidebar />
           </Grid>
         </Grid>
+        {location.pathname === "/" && <Certificates />}
       </div>
       <Footer />
     </div>

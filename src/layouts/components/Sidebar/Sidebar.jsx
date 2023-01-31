@@ -3,9 +3,10 @@ import { styled } from "@mui/material/styles";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Button, IconButton } from "@mui/material";
 import { ThemeContext } from "../../../features/ThemeContext";
 import Tag from "../../../components/Tag/Tag";
@@ -95,6 +96,13 @@ function Sidebar() {
             Contact
           </p>
 
+          <div className="birthday">
+            <IconButton sx={{ color: "#fb2576" }}>
+              <CalendarMonthIcon fontSize="medium" />
+            </IconButton>
+            <p style={{ color: theme.color }}>April 26, 2002</p>
+          </div>
+
           <div className="address">
             <IconButton sx={{ color: "#fb2576" }}>
               <PhoneIcon fontSize="medium" />
@@ -107,6 +115,15 @@ function Sidebar() {
               <EmailIcon fontSize="medium" />
             </IconButton>
             <p style={{ color: theme.color }}>Vtmyanh2604@gmail.com</p>
+          </div>
+
+          <div className="location">
+            <IconButton sx={{ color: "#fb2576" }}>
+              <LocationOnIcon fontSize="medium" />
+            </IconButton>
+            <p style={{ color: theme.color }}>
+              Phu Huu, District 9, Ho Chi Minh City
+            </p>
           </div>
 
           <div className="box-contact">
