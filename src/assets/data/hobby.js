@@ -85,7 +85,81 @@ export const hobbys = [
   },
   { id: 8, title: "Dogs", listImage: [] },
   { id: 1, title: "Color", listImage: [] },
-  { id: 2, title: "Foods", listImage: [] },
+  {
+    id: 2,
+    title: "Foods",
+    listImage: [
+      {
+        img: "/images/food/food3.png",
+        title: "Breakfast",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/food/food2.png",
+        title: "Camera",
+        cols: 2,
+      },
+      {
+        img: "/images/food/food1.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/food/food4.png",
+        title: "Coffee",
+        cols: 2,
+      },
+
+      {
+        img: "/images/food/food5.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 1,
+      },
+      {
+        img: "/images/food/food10.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 1,
+      },
+      {
+        img: "/images/food/food6.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/food/food7.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+      },
+      {
+        img: "/images/food/food8.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+      },
+      {
+        img: "/images/food/food9.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/food/food11.png",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+      },
+     
+    ],
+  },
   { id: 3, title: "Sports", listImage: [] },
   { id: 4, title: "Guitar", listImage: [] },
   {
