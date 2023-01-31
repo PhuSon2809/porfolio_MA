@@ -9,9 +9,9 @@ function Home() {
   const { theme, dark } = useContext(ThemeContext);
 
   return (
-    <div className="content">
+    <div className="home-content">
       {listProjects.map((item) => (
-        <div className="place">
+        <div key={item.id} className="place">
           <div className="big-tile">
             <LayersIcon sx={{ color: "#fb2576" }} />
             <p
@@ -29,7 +29,7 @@ function Home() {
             ))}
           </div>
           {item.projects.map((project) => (
-            <CardProject key={project.id} project={project} />
+            <CardProject key={project.id} project={project} idBigProject={item.id} />
           ))}
         </div>
       ))}

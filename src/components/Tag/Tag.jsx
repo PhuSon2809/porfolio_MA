@@ -15,6 +15,10 @@ const TagComponent = styled.label`
   font-size: 0.875rem;
   border-radius: 20px;
   text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 function Tag({ children, variant, to, className }) {
@@ -37,7 +41,27 @@ function Tag({ children, variant, to, className }) {
                 ? "#04baf6"
                 : variant === "external"
                 ? "#f18509"
-                : "#1dbf2f",
+                : variant === "seller"
+                ? "#1dbf2f"
+                : variant === "pg"
+                ? "#051c6d"
+                : variant === "shoppee"
+                ? "#fb5531"
+                : variant === "food"
+                ? "#f18509"
+                : variant === "sport"
+                ? "#41b35d"
+                : variant === "guitar"
+                ? "#8e681b"
+                : variant === "travel"
+                ? "#17a1e0"
+                : variant === "style"
+                ? "#88359d"
+                : variant === "family"
+                ? "#ff0000"
+                : variant === "dog"
+                ? "#ebbf42"
+                : "#fb2576",
           }}
         />
         {children}

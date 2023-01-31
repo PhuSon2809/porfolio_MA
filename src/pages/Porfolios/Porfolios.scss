@@ -1,0 +1,28 @@
+@use "../../scss/" as *;
+
+.porfolios {
+  padding-right: 20px;
+  padding-bottom: 50px;
+
+  .title {
+    padding: 32px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+
+    p {
+      width: 100%;
+      text-align: center;
+      line-height: 3;
+      font-size: 2rem;
+      font-weight: 600;
+      border-radius: 10px;
+      color: #fff;
+      background-color: #fb2576;
+    }
+  }
+
+  .list-image {
+    padding: 32px;
+    border-radius: 16px;
+  }
+}

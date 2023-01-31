@@ -6,11 +6,11 @@ import { ThemeContext } from "../../features/ThemeContext";
 import Tag from "../Tag/Tag";
 import "./CardProject.scss";
 
-function CardProject({ project }) {
+function CardProject({ project, idBigProject }) {
   const { theme, dark } = useContext(ThemeContext);
 
   return (
-    <Link to={`detail/${project.id}`} style={{ textDecoration: "none" }}>
+    <Link to={`detail/${idBigProject}/${project.id}`} style={{ textDecoration: "none" }}>
       <div className="card" style={{ background: theme.backgroundColor }}>
         <div className="card-inner">
           <div className="card-image">
@@ -39,7 +39,7 @@ function CardProject({ project }) {
               ))}
             </div>
             <div className="time">
-              <CalendarMonthIcon fontSize="small" /> May 2, 2022
+              <CalendarMonthIcon fontSize="small" /> {project.timeStart}
             </div>
           </div>
         </div>

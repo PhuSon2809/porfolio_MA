@@ -32,12 +32,8 @@ const navLinks = [
     url: config.routes.home,
   },
   {
-    display: "About",
-    url: "#about",
-  },
-  {
     display: "Porfolio",
-    url: "#porfolio",
+    url: config.routes.porfolios,
   },
   {
     display: "Activities",
@@ -74,7 +70,7 @@ function Header() {
             <NavLink
               key={index}
               to={item.url}
-              className="item"
+              className={({ isActive }) => (isActive ? "item active" : "item")}
               style={{ color: theme.color }}
             >
               <li>
@@ -94,7 +90,7 @@ function Header() {
             >
               {!dark ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />}
             </IconButton>
-            <LogoutButton>Download CV</LogoutButton>
+            {/* <LogoutButton>Download CV</LogoutButton> */}
           </li>
         </ul>
       </div>

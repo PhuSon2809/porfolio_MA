@@ -8,7 +8,7 @@
 
   .brand {
     @include flex(center, unset, row);
-    
+
     .brand-name {
       font-size: 1.7rem;
       font-family: "Times New Roman", Times, serif;
@@ -35,6 +35,11 @@
           text-decoration-color: $pink-dark;
           transition: all 0.25s;
         }
+      }
+
+      .active {
+        text-decoration: underline !important;
+        text-decoration-color: $pink-dark !important;
       }
 
       .cv-btn {

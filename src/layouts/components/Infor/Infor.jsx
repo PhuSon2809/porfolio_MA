@@ -29,17 +29,20 @@ function Infor() {
               loop={0}
               typeSpeed={70}
               deleteSpeed={50}
-              delaySpeed={1000}
-              words={["Brand Key Account.", "Project Manager Intern."]}
+              delaySpeed={1500}
+              words={[
+                "Project Management Intern.",
+                "Operations Assistant Intern.",
+              ]}
             />
           </h1>
           <p className="discription" style={{ color: theme.color }}>
             As an energetic and hard-working individual, I am always asking
             myself non stop improve. Currently seeking a new challenge in a
-            dynamic work environment, especially in the PROJECT MANAGER INTERN
-            department. With the ability to work calmly under pressure, I will
-            contribute to the company's BRAND KEY ACCOUNT team to achieve its
-            strategic goals.
+            dynamic work environment, especially in the PROJECT MANAGEMENT &
+            OPERATIONS ASSISTANT INTERN department. With the ability to work
+            calmly under pressure, I will contribute to the company's team to
+            achieve its strategic goals.
           </p>
         </div>
       </Grid>

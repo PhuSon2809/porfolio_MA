@@ -1,0 +1,86 @@
+@use "../../scss/" as *;
+
+.activities {
+  .flex {
+    @include flex(center, unset, row);
+  }
+  
+  .club {
+    @include flex(center, unset, row);
+    gap: 10px;
+    margin-bottom: 70px;
+
+    img {
+      width: 120px;
+    }
+
+    p {
+      line-height: 1.2;
+      font-size: 2rem;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $pink-dark;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+
+  .box-image {
+    position: relative;
+    .img-infor {
+      @include flex(center, center, unset);
+      width: 70%;
+      margin: auto;
+      border-radius: 999px;
+      border: 3px solid $pink-dark;
+      z-index: 100;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 999px;
+        z-index: 100;
+      }
+    }
+
+    .layer-1{
+        position: absolute;
+        top: 0;
+        left: 95px;
+        width: 70%;
+        height: 100%;
+        border-radius: 30px;
+        background: #fb257790;
+        z-index: 10;
+        transform: rotate(10deg);
+    }
+
+    .layer-2{
+        position: absolute;
+        top: 0;
+        left: 95px;
+        width: 70%;
+        height: 100%;
+        border-radius: 30px;
+        background: #fb2577be;
+        z-index: 10;
+        transform: rotate(20deg);
+    }
+
+    .layer-3{
+        position: absolute;
+        top: 0;
+        left: 95px;
+        width: 70%;
+        height: 100%;
+        border-radius: 30px;
+        background: #fb257745;
+        z-index: 10;
+        transform: rotate(30deg);
+    }
+  }
+}

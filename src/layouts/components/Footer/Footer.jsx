@@ -9,6 +9,7 @@ import Tag from "../../../components/Tag/Tag";
 import { ThemeContext } from "../../../features/ThemeContext";
 import "./Footer.scss";
 import { position } from "../../../assets/data/position";
+import { mySelfs } from "../../../assets/data/mySelf";
 
 function Footer() {
   const { theme, dark } = useContext(ThemeContext);
@@ -23,7 +24,7 @@ function Footer() {
     >
       <div className="wrapper">
         <Grid container spacing={3}>
-          <Grid item md={4}>
+          <Grid item md={3}>
             <div className="brand">
               <IconButton sx={{ p: 0, mr: 1, color: "#fb2576" }}>
                 <AutoAwesomeIcon sx={{ fontSize: "3rem" }} />
@@ -40,10 +41,10 @@ function Footer() {
               </Typography>
             </div>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={3}>
             <div className="tag-list">
               <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
-                Tags
+                Positions
               </p>
 
               <div className="tags">
@@ -56,24 +57,41 @@ function Footer() {
             </div>
           </Grid>
           <Grid item md={4}>
-            {" "}
+            <div className="tag-list" style={{marginLeft: "1.5rem"}}>
+              <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
+                My Self
+              </p>
+
+              <div className="tags">
+                {mySelfs.map((mySelf) => (
+                  <Tag key={mySelf.id} variant={mySelf.variant}>
+                    {mySelf.title}
+                  </Tag>
+                ))}
+              </div>
+            </div>
+          </Grid>
+          <Grid item md={2}>
             <div className="media">
               <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
-                Follow us
+                Follow me
               </p>
               <div className="icon">
-                <IconButton className="icon-btn">
-                  <FacebookIcon fontSize="large" />
-                </IconButton>
-                <IconButton className="icon-btn">
-                  <InstagramIcon fontSize="large" />
-                </IconButton>
-                <IconButton className="icon-btn">
-                  <TwitterIcon fontSize="large" />
-                </IconButton>
-                <IconButton className="icon-btn">
-                  <LinkedInIcon fontSize="large" />
-                </IconButton>
+                <a href="https://www.facebook.com/myanh.van.90">
+                  <IconButton className="icon-btn">
+                    <FacebookIcon fontSize="large" />
+                  </IconButton>
+                </a>
+                <a href="https://www.instagram.com/_itscutiemanh/">
+                  <IconButton className="icon-btn">
+                    <InstagramIcon fontSize="large" />
+                  </IconButton>
+                </a>
+                <a href="https://www.linkedin.com/in/v%C4%83n-m%E1%BB%B9-anh-2604abc/">
+                  <IconButton className="icon-btn">
+                    <LinkedInIcon fontSize="large" />
+                  </IconButton>
+                </a>
               </div>
             </div>
           </Grid>

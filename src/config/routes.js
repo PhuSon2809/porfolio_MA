@@ -1,6 +1,7 @@
 const routes = {
   home: "/",
-  detail: "/detail/:id",
+  detail: "/detail/:idBigProject/:id",
+  porfolios: "/porfolios",
   activities: "/activities",
   notFound: "*",
 };
