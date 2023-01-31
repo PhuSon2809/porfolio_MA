@@ -17,7 +17,7 @@ export const listProjects = [
         positions: [{ id: 1, title: "PG&PB Manager", variant: "pg" }],
         discription: [
           "Recruit and Manage a team of 18 PG/PB at Galaxy Cinemas nationwide.",
-          "Organize training sessions, ensure project quality, problem solving: Cost/Redeem decreased 54,7% (From 15.000vnđ to 6.800vnd).",
+          `Organize training sessions, ensure project quality, problem solving: Cost/Redeem decreased <strong>54,7% (From 15.000vnđ to 6.800vnd).</strong>`,
         ],
         image: "/images/galaxy.jpg",
         video: "",
@@ -67,7 +67,8 @@ export const listProjects = [
         ],
         image: "/images/fcamp/fcamp1.jpg",
         cover: "/images/fcamp/fcamp2.jpg",
-        video: "https://www.youtube.com/embed/WEdaetOyhtM",
+        video: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FFCampHCM%2Fvideos%2F677248657442579%2F&show_text=false&width=560&t=0",
+        // video: "https://www.youtube.com/embed/WEdaetOyhtM",
         listImage: [
           {
             img: "/images/v1.jpg",
@@ -144,6 +145,7 @@ export const listProjects = [
         ],
         image: "/images/ftalk/ftalk1.png",
         cover: "/images/ftalk/ftalk2.png",
+        // video: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FFPTEventClub%2Fvideos%2F1052546892185838%2F&show_text=false&width=560&t=0",
         video: "https://www.youtube.com/embed/uAW26qTX_ro",
         listImage: [
           {
@@ -180,9 +182,10 @@ export const listProjects = [
           "Direct collaboration with partners, as a representation of the partnership agreement: earned 8.800.000 VND.",
           "Advertised products on media publications such as banner, posters, leaflets... Introduced, consult, sold goods and food at the Shop: earned 8.300.000 VND.",
         ],
-        image: "/images/fcamp/fcamp1.jpg",
-        cover: "/images/fcamp/fcamp2.jpg",
-        video: "",
+        image: "/images/xaa/xaa1.png",
+        cover: "/images/xaa/xaa2.png",
+        video:
+          "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FFPTEventClub%2Fvideos%2F411773920140176%2F&show_text=false&width=560&t=0",
         listImage: [
           {
             img: "/images/v1.jpg",

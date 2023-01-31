@@ -63,14 +63,11 @@ function Infor() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img
-                src="https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/323127347_549501826835164_4597030068057628239_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=fDWHiL_vx4QAX8Fdje2&_nc_ht=scontent.fsgn13-3.fna&oh=00_AfAyVOR6txm4KCTpc_lBsx8ePwYBAMCb_gEfqMu7G8qMJQ&oe=63D5A218"
-                alt="infor"
-              />
+              <img src="/images/activities/myanh.jpg" alt="infor" />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/273392903_691765755565464_8244085838016981352_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=n-Wsy22hLdQAX8ysq2_&_nc_oc=AQlNIGIFf1Sv5yk3tDDlzW2nnXbTD_GRHwBJ9SwDL2wVdBM1vCLArPw0IwKE0nqcMq0zEOPF0tupJ2qHqxNMkBn0&_nc_ht=scontent.fsgn3-1.fna&oh=00_AfA8A8_LWHMubJKkSq92MXkTSGmuqxvrdZM4LZvCZG6_tQ&oe=63D4338D"
+                src="/images/banner/banner1.jpg"
                 alt="infor"
               />
             </SwiperSlide>

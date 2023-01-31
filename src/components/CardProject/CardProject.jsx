@@ -20,6 +20,7 @@ function CardProject({ project, idBigProject }) {
             <div className="card-inner">
               <div className="card-image">
                 <img src={project.image} alt="" />
+                
               </div>
               <div className="card-content">
                 <div className="tag-list">
