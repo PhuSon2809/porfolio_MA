@@ -77,6 +77,7 @@ function Certificates() {
             </p>
             <div className="course-content">
               <img src="./images/course.png" alt="course" />
+
               <div className="content">
                 <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
                   Brand Camp - Creative & Advertising: Account Management 101.

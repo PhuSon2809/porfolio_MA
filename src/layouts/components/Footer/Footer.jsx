@@ -59,7 +59,7 @@ function Footer() {
           <Grid item md={4}>
             <div className="tag-list" style={{marginLeft: "1.5rem"}}>
               <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
-                My Self
+                MySelf
               </p>
 
               <div className="tags">

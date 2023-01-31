@@ -4,6 +4,7 @@ import { Box, ImageList, ImageListItem } from "@mui/material";
 import Modal from "../../components/Modal/Modal";
 import "./MySelf.scss";
 import { ThemeContext } from "../../features/ThemeContext";
+import { hobbys } from "../../assets/data/hobby";
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -16,7 +17,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 function MySelf() {
   const { tag } = useParams();
-  const { theme, dark } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const [isOpen, setIsOpen] = useState(false);
   const [image, setImage] = useState();
@@ -25,6 +26,10 @@ function MySelf() {
     setIsOpen(!isOpen);
     setImage(item);
   };
+
+  const hobby = hobbys.find((hobby) => {
+    return hobby.title === tag;
+  });
 
   return (
     <div className="myself">
@@ -39,16 +44,18 @@ function MySelf() {
         </div>
       </div>
 
-      <div className="list-image" style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}>
+      <div
+        className="list-image"
+        style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}
+      >
         <Box sx={{ width: "100%" }}>
-          mmmmm
           <ImageList
             sx={{ width: "100%" }}
             variant="quilted"
             cols={4}
             rowHeight={200}
           >
-            {/* {project.listImage.map((item) => (
+            {hobby.listImage.map((item) => (
               <ImageListItem
                 key={item.img}
                 cols={item.cols || 1}
@@ -61,7 +68,7 @@ function MySelf() {
                   onClick={() => handleSetImage(item)}
                 />
               </ImageListItem>
-            ))} */}
+            ))}
           </ImageList>
           {isOpen && (
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} image={image} />

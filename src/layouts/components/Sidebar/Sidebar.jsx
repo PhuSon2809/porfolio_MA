@@ -56,7 +56,7 @@ function Sidebar() {
 
         <div className="tag-list">
           <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
-            My Self
+            MySelf
           </p>
 
           <div className="tags">
