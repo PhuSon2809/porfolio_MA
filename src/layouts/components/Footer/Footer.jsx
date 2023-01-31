@@ -57,14 +57,18 @@ function Footer() {
             </div>
           </Grid>
           <Grid item md={4}>
-            <div className="tag-list" style={{marginLeft: "1.5rem"}}>
+            <div className="tag-list" style={{ marginLeft: "1.5rem" }}>
               <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
                 MySelf
               </p>
 
               <div className="tags">
                 {mySelfs.map((mySelf) => (
-                  <Tag key={mySelf.id} variant={mySelf.variant}>
+                  <Tag
+                    to={`/myself/${mySelf.title}`}
+                    key={mySelf.id}
+                    variant={mySelf.variant}
+                  >
                     {mySelf.title}
                   </Tag>
                 ))}

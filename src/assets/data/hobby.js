@@ -241,7 +241,81 @@ export const hobbys = [
       },
     ],
   },
-  { id: 3, title: "Sports", listImage: [] },
+  {
+    id: 3,
+    title: "Sports",
+    listImage: [
+      {
+        img: "/images/sport/ten1.jpg",
+        title: "Breakfast",
+        cols: 1,
+      },
+      {
+        img: "/images/sport/ten2.jpg",
+        title: "Camera",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/sport/ten3.jpg",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 1,
+      },
+      {
+        img: "/images/sport/ten4.jpg",
+        title: "Coffee",
+        cols: 1,
+      },
+
+      {
+        img: "/images/sport/ten5.jpg",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 1,
+      },
+      {
+        img: "/images/sport/long4.jpg",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/sport/long1.jfif",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 1,
+      },
+      {
+        img: "/images/sport/long3.jfif",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 1,
+      },
+      {
+        img: "/images/sport/long2.jfif",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+      },
+
+      {
+        img: "/images/sport/swim1.jfif",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+        rows: 2,
+      },
+      {
+        img: "/images/sport/swim2.jfif",
+        title: "Honey",
+        author: "@arwinneil",
+        cols: 2,
+        rows: 2,
+      },
+    ],
+  },
   { id: 4, title: "Guitar", listImage: [] },
   {
     id: 5,
