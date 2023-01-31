@@ -11,14 +11,14 @@
     .background {
       @include flex(center, center, row);
       height: 150px;
-      background: url("../../../public/images/style1.jpg");
+      background: #fb2576;
       background-size: cover;
       border-radius: 12px;
 
       .title {
         width: 250px;
         padding: 1rem;
-        background: rgba(255, 255, 255, 0.888);
+        background: rgba(255, 255, 255, 0.838);
         line-height: 1.2;
         font-size: 2.5rem;
         font-weight: 600;

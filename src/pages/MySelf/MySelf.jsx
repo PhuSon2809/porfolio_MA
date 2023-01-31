@@ -38,7 +38,7 @@ function MySelf() {
         style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}
       >
         <div className="background">
-          <p className="title" style={{ color: theme.color }}>
+          <p className="title" >
             {tag}
           </p>
         </div>
