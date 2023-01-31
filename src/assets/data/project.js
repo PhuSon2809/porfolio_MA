@@ -2,14 +2,54 @@ export const listProjects = [
   {
     id: 1,
     title: "PARTNERSHIP KEY ACCOUNT INTERN",
-    discription: [],
-    projects: [],
+    discription: [
+      "- Assist manager in Operation, problem solving, Continuous Improvement process.",
+      "- Follow up the work and delivery time for assigned projects.",
+      "- Collaborate with other organizers to build up a project plan and marketing plan.",
+      "- Following-up project tracking, processes, procedure.",
+    ],
+    projects: [
+      {
+        id: 1,
+        title: "Manage PG&PB",
+        timeStart: "September 2022 - Now",
+        timeEnd: "Present",
+        positions: [{ id: 1, title: "PG&PB Manager", variant: "pg" }],
+        discription: [
+          "Recruit and Manage a team of 18 PG/PB at Galaxy Cinemas nationwide.",
+          "Organize training sessions, ensure project quality, problem solving: Cost/Redeem decreased 54,7% (From 15.000vnđ to 6.800vnd).",
+        ],
+        image: "/images/galaxy.jpg",
+        video: "",
+        listImage: null,
+      },
+      {
+        id: 1,
+        title: "Admin Galaxy Play's Shopee Mall account",
+        timeStart: "September 2022 - Now",
+        timeEnd: "Present",
+        positions: [
+          {
+            id: 2,
+            title: "Admin Galaxy Play's Shoppee Mall",
+            variant: "shoppee",
+          },
+        ],
+        discription: [
+          "Admin Galaxy Play's Shopee Mall account.",
+          "Posting products for sale, replying to customer messages, problem solving: response rate increased from 58% to 70%.",
+        ],
+        image: "/images/galaxy.jpg",
+        video: "",
+        listImage: null,
+      },
+    ],
   },
   {
     id: 2,
     title: "FPTU EVENT CLUB - FEV",
     discription: [
-      "Organize more than 10 internal and FPTU events about academics, entertainment, and volunteering.",
+      "- Organize more than 10 internal and FPTU events about academics, entertainment, and volunteering.",
     ],
     projects: [
       {
@@ -25,56 +65,65 @@ export const listProjects = [
           "Manage budget, ensure project quality.",
           "Expected: 2.000 participants.",
         ],
-        image:
-          "https://scontent.fsgn8-2.fna.fbcdn.net/v/t39.30808-6/313259685_499600568866770_9064377509049626290_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=85Jy7skDta0AX-Gsu9V&_nc_ht=scontent.fsgn8-2.fna&oh=00_AfAFMCO2gwS493ZntNOY5aOmvCJiHKWw0JEvC_uTg-wvmQ&oe=63D68256",
+        image: "/images/fcamp/fcamp1.jpg",
+        cover: "/images/fcamp/fcamp2.jpg",
+        video: "https://www.youtube.com/embed/WEdaetOyhtM",
         listImage: [
           {
-            img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-            title: "Bed",
+            img: "/images/v1.jpg",
+            title: "Breakfast",
+            rows: 2,
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-            title: "Books",
+            img: "/images/dai1.jpg",
+            title: "Camera",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-            title: "Sink",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-            title: "Kitchen",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-            title: "Blinds",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-            title: "Chairs",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-            title: "Laptop",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-            title: "Doors",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+            img: "/images/dai2.jpg",
             title: "Coffee",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-            title: "Storage",
+            img: "/images/v2.jpg",
+            title: "Honey",
+            author: "@arwinneil",
+            rows: 2,
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-            title: "Candle",
+            img: "/images/dai4.jpg",
+            title: "Hats",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-            title: "Coffee table",
+            img: "/images/dai3.jpg",
+            title: "Basketball",
+            cols: 2,
+          },
+          {
+            img: "/images/v1.jpg",
+            title: "Fern",
+          },
+          {
+            img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+            title: "Mushrooms",
+            rows: 2,
+            cols: 2,
+          },
+          {
+            img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+            title: "Tomato basil",
+          },
+          {
+            img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+            title: "Sea star",
+          },
+          {
+            img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+            title: "Bike",
+            cols: 2,
           },
         ],
       },
@@ -93,56 +142,25 @@ export const listProjects = [
           "Worked with external and internal partners to develop and execute content strategies.",
           "Contacted and collaborated with 4 guest speakers with extensive experience in the academic field.",
         ],
-        image:
-          "https://scontent.fsgn8-2.fna.fbcdn.net/v/t39.30808-6/313259685_499600568866770_9064377509049626290_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=85Jy7skDta0AX-Gsu9V&_nc_ht=scontent.fsgn8-2.fna&oh=00_AfAFMCO2gwS493ZntNOY5aOmvCJiHKWw0JEvC_uTg-wvmQ&oe=63D68256",
+        image: "/images/ftalk/ftalk1.png",
+        cover: "/images/ftalk/ftalk2.png",
+        video: "https://www.youtube.com/embed/uAW26qTX_ro",
         listImage: [
           {
-            img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-            title: "Bed",
+            img: "/images/ftalk/ftalk3.png",
+            title: "Breakfast",
+            rows: 2,
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-            title: "Books",
+            img: "/images/ftalk/ftalk4.png",
+            title: "Camera",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-            title: "Sink",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-            title: "Kitchen",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-            title: "Blinds",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-            title: "Chairs",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-            title: "Laptop",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-            title: "Doors",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+            img: "/images/ftalk/ftalk5.png",
             title: "Coffee",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-            title: "Storage",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-            title: "Candle",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-            title: "Coffee table",
+            cols: 2,
           },
         ],
       },
@@ -162,56 +180,65 @@ export const listProjects = [
           "Direct collaboration with partners, as a representation of the partnership agreement: earned 8.800.000 VND.",
           "Advertised products on media publications such as banner, posters, leaflets... Introduced, consult, sold goods and food at the Shop: earned 8.300.000 VND.",
         ],
-        image:
-          "https://scontent.fsgn8-2.fna.fbcdn.net/v/t39.30808-6/313259685_499600568866770_9064377509049626290_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=85Jy7skDta0AX-Gsu9V&_nc_ht=scontent.fsgn8-2.fna&oh=00_AfAFMCO2gwS493ZntNOY5aOmvCJiHKWw0JEvC_uTg-wvmQ&oe=63D68256",
+        image: "/images/fcamp/fcamp1.jpg",
+        cover: "/images/fcamp/fcamp2.jpg",
+        video: "",
         listImage: [
           {
-            img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-            title: "Bed",
+            img: "/images/v1.jpg",
+            title: "Breakfast",
+            rows: 2,
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-            title: "Books",
+            img: "/images/dai1.jpg",
+            title: "Camera",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-            title: "Sink",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-            title: "Kitchen",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-            title: "Blinds",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-            title: "Chairs",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-            title: "Laptop",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-            title: "Doors",
-          },
-          {
-            img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+            img: "/images/dai2.jpg",
             title: "Coffee",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-            title: "Storage",
+            img: "/images/v2.jpg",
+            title: "Honey",
+            author: "@arwinneil",
+            rows: 2,
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-            title: "Candle",
+            img: "/images/dai4.jpg",
+            title: "Hats",
+            cols: 2,
           },
           {
-            img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-            title: "Coffee table",
+            img: "./images/dai3.jpg",
+            title: "Basketball",
+            cols: 2,
+          },
+          {
+            img: "./images/v1.jpg",
+            title: "Fern",
+          },
+          {
+            img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+            title: "Mushrooms",
+            rows: 2,
+            cols: 2,
+          },
+          {
+            img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+            title: "Tomato basil",
+          },
+          {
+            img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+            title: "Sea star",
+          },
+          {
+            img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+            title: "Bike",
+            cols: 2,
           },
         ],
       },

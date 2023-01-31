@@ -3,7 +3,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { ThemeContext } from "../../features/ThemeContext";
 import "./Porfolios.scss";
-import Modal from "./Modal/Modal";
+import Modal from "../../components/Modal/Modal";
 
 const itemData = [
   {

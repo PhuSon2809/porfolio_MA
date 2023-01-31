@@ -1,5 +1,9 @@
 @use "../../scss/" as *;
 
+.cursor {
+  cursor: default;
+}
+
 .card {
   padding: 2rem;
   margin-bottom: 3rem;
@@ -48,6 +52,18 @@
           text-decoration-color: $pink-dark;
           text-decoration-thickness: 2px;
           text-underline-offset: 3px;
+        }
+      }
+
+      .box-paragraph-all {
+        margin-bottom: 1.5rem;
+        height: auto;
+        overflow: hidden;
+
+        .paragraph {
+          margin-bottom: 0.25rem;
+          line-height: 1.8;
+          height: auto;
         }
       }
 

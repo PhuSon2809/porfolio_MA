@@ -4,11 +4,11 @@
   .flex {
     @include flex(center, unset, row);
   }
-  
+
   .club {
     @include flex(center, unset, row);
     gap: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 
     img {
       width: 120px;
@@ -30,57 +30,80 @@
 
   .box-image {
     position: relative;
+    width: 100%;
+
+    .img-infor-1 {
+      @include flex(center, center, unset);
+      width: 70%;
+      border-radius: 16px;
+      position: absolute;
+      left: 0;
+      top: -70px;
+      z-index: 300;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 16px;
+        box-shadow: 3px 3px 4px 1px #fb5091;
+        transition: all 0.25s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .img-infor-2 {
+      @include flex(center, center, unset);
+      width: 70%;
+      border-radius: 16px;
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      z-index: 200;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 16px;
+        box-shadow: 3px 3px 4px 1px #fb5091;
+        transition: all 0.25s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
     .img-infor {
       @include flex(center, center, unset);
       width: 70%;
       margin: auto;
       border-radius: 999px;
-      border: 3px solid $pink-dark;
-      z-index: 100;
+      z-index: 900;
 
       img {
         width: 100%;
         height: 100%;
         margin: auto;
         border-radius: 999px;
-        z-index: 100;
+        z-index: 900;
+        box-shadow: 3px 3px 4px 1px #fb5091;
+        transition: all 0.25s ease-in-out;
       }
-    }
 
-    .layer-1{
-        position: absolute;
-        top: 0;
-        left: 95px;
-        width: 70%;
-        height: 100%;
-        border-radius: 30px;
-        background: #fb257790;
-        z-index: 10;
-        transform: rotate(10deg);
-    }
-
-    .layer-2{
-        position: absolute;
-        top: 0;
-        left: 95px;
-        width: 70%;
-        height: 100%;
-        border-radius: 30px;
-        background: #fb2577be;
-        z-index: 10;
-        transform: rotate(20deg);
-    }
-
-    .layer-3{
-        position: absolute;
-        top: 0;
-        left: 95px;
-        width: 70%;
-        height: 100%;
-        border-radius: 30px;
-        background: #fb257745;
-        z-index: 10;
-        transform: rotate(30deg);
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
     }
   }
 }

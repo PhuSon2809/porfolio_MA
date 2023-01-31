@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { styled } from "@mui/material/styles";
 import { Button, Dialog, DialogActions, DialogContent } from "@mui/material";
-import { ThemeContext } from "../../../features/ThemeContext";
+import { ThemeContext } from "../../features/ThemeContext";
 
 const CloseButton = styled(Button)({
     padding: "0 1rem",

@@ -7,10 +7,28 @@ import Tag from "../../components/Tag/Tag";
 import { listProjects } from "../../assets/data/project";
 import { ThemeContext } from "../../features/ThemeContext";
 import "./Detail.scss";
+import Modal from "../../components/Modal/Modal";
+import { useState } from "react";
+
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
 
 function Detail() {
   const { idBigProject, id } = useParams();
   const { theme, dark } = useContext(ThemeContext);
+  const [isOpen, setIsOpen] = useState(false);
+  const [image, setImage] = useState();
+
+  const handleSetImage = (item) => {
+    setIsOpen(!isOpen);
+    setImage(item);
+  };
 
   const projects = listProjects.find((projects) => {
     return projects.id == idBigProject;
@@ -27,10 +45,7 @@ function Detail() {
         style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}
       >
         <div className="img-title">
-          <img
-            src="https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/314646116_499591732200987_2328258349536883169_n.jpg?stp=dst-jpg_p600x600&_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=zi6_Q5n9Fo0AX8PLfDs&tn=r9klAhFbrvO_FJ86&_nc_ht=scontent.fsgn13-3.fna&oh=00_AfABEQjPnXxhYIv_9SCq9e4DjQy7GWS5vUPgZqDAh3oPJQ&oe=63D6A7D1"
-            alt=""
-          />
+          <img src={project.cover} alt="" />
         </div>
 
         <div className="content">
@@ -62,19 +77,42 @@ function Detail() {
             ))}
           </div>
 
+          {project.video && (
+            <iframe
+              width="100%"
+              height="400px"
+              src={project.video}
+              title={project.title}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ marginBottom: "30px", boxShadow: theme.shadow }}
+            />
+          )}
+
           <Box sx={{ width: "100%" }}>
-            <ImageList variant="masonry" cols={3} gap={8}>
+            <ImageList
+              sx={{ width: "100%" }}
+              variant="quilted"
+              cols={4}
+              rowHeight={200}
+            >
               {project.listImage.map((item) => (
-                <ImageListItem key={item.img}>
+                <ImageListItem
+                  key={item.img}
+                  cols={item.cols || 1}
+                  rows={item.rows || 1}
+                >
                   <img
-                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    {...srcset(item.img, 200, item.rows, item.cols)}
                     alt={item.title}
                     loading="lazy"
+                    onClick={() => handleSetImage(item)}
                   />
                 </ImageListItem>
               ))}
             </ImageList>
+            {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} image={image} />}
           </Box>
         </div>
       </div>

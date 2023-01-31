@@ -13,11 +13,14 @@ function Activities() {
         <img src="./images/fevlogo.png" alt="logo" />
         <p style={{ color: !dark ? "#000" : "#fff" }}>FPTU Event Club - FEV</p>
       </div>
-      <Grid container sx={{ pb: 15 }}>
-        <Grid item md={6}>
+      <Grid container sx={{ pb: 25 }}>
+        <Grid item md={6} className="flex">
           <div className="box-image" data-aos="fade-up">
-            <div className="img-infor">
-              <img src="./images/myanh.jpg" alt="logo" />
+            <div className="img-infor-1">
+              <img src="./images/activities/activities1.jpg" alt="logo" className="img-1" />
+            </div>
+            <div className="img-infor-2">
+              <img src="./images/activities/activities2.jpg" alt="logo" className="img-2"/>
             </div>
           </div>
         </Grid>
@@ -29,10 +32,10 @@ function Activities() {
         <Grid item md={6} sx={{ pl: 5, pr: 5 }} className="flex">
           <CardActivities activiti={activities[1]} />
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} className="flex">
           <div className="box-image">
             <div className="img-infor">
-              <img src="./images/myanh.jpg" alt="logo" />
+              <img src="./images/activities/myanh.jpg" alt="logo" />
             </div>
           </div>
         </Grid>
