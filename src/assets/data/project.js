@@ -14,7 +14,9 @@ export const listProjects = [
         title: "Manage PG&PB",
         timeStart: "September 2022 - Now",
         timeEnd: "Present",
-        positions: [],
+        positions: [
+          // { id: 1, title: "PG&PB Manager", variant: "pg" }
+        ],
         discription: [
           "Recruit and Manage a team of 18 PG/PB at Galaxy Cinemas nationwide.",
           <>
@@ -82,11 +84,11 @@ export const listProjects = [
         timeStart: "September 2022 - Now",
         timeEnd: "Present",
         positions: [
-          {
-            id: 2,
-            title: "Admin Galaxy Play's Shoppee Mall",
-            variant: "shoppee",
-          },
+          // {
+          //   id: 2,
+          //   title: "Admin Galaxy Play's Shoppee Mall",
+          //   variant: "shoppee",
+          // },
         ],
         discription: [
           "Admin Galaxy Play's Shopee Mall account.",
