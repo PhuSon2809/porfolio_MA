@@ -5,6 +5,7 @@ import NotFound from "../pages/NotFound404/NotFound";
 import Activities from "../pages/Activities/Activities";
 import Porfolios from "../pages/Porfolios/Porfolios";
 import { HeaderFooterOnly } from "../layouts";
+import MySelf from "../pages/MySelf/MySelf";
 
 const publicRoutes = [
   {
@@ -18,6 +19,10 @@ const publicRoutes = [
   {
     path: config.routes.porfolios,
     component: Porfolios,
+  },
+  {
+    path: config.routes.myself,
+    component: MySelf,
   },
   {
     path: config.routes.activities,

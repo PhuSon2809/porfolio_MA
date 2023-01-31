@@ -63,7 +63,11 @@ function Infor() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src="/images/activities/myanh2.jpg" alt="infor" />
+              {/* <img src="/images/activities/myanh2.jpg" alt="infor" /> */}
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/activities%2Fmyanh2.jpg?alt=media&token=a2e4b495-9bd3-4aa1-89be-1fa842c8e0d3"
+                alt="infor"
+              />
             </SwiperSlide>
             {/* <SwiperSlide>
               <img src="/images/banner/banner1.jpg" alt="infor" />

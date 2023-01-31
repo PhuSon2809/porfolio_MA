@@ -9,9 +9,8 @@ const TagComponent = styled.label`
   align-items: center;
   gap: 5px;
   width: fit-content;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 12px;
+  height: fit-content;
+  padding: 6px 12px;
   font-size: 0.875rem;
   border-radius: 20px;
   text-decoration: none;

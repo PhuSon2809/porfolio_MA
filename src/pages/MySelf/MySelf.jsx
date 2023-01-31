@@ -1,7 +1,75 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Box, ImageList, ImageListItem } from "@mui/material";
+import Modal from "../../components/Modal/Modal";
+import "./MySelf.scss";
+import { ThemeContext } from "../../features/ThemeContext";
+
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
 
 function MySelf() {
-  return <div>MySelf</div>;
+  const { tag } = useParams();
+  const { theme, dark } = useContext(ThemeContext);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [image, setImage] = useState();
+
+  const handleSetImage = (item) => {
+    setIsOpen(!isOpen);
+    setImage(item);
+  };
+
+  return (
+    <div className="myself">
+      <div
+        className="box-title"
+        style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}
+      >
+        <div className="background">
+          <p className="title" style={{ color: theme.color }}>
+            {tag}
+          </p>
+        </div>
+      </div>
+
+      <div className="list-image" style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}>
+        <Box sx={{ width: "100%" }}>
+          mmmmm
+          <ImageList
+            sx={{ width: "100%" }}
+            variant="quilted"
+            cols={4}
+            rowHeight={200}
+          >
+            {/* {project.listImage.map((item) => (
+              <ImageListItem
+                key={item.img}
+                cols={item.cols || 1}
+                rows={item.rows || 1}
+              >
+                <img
+                  {...srcset(item.img, 200, item.rows, item.cols)}
+                  alt={item.title}
+                  loading="lazy"
+                  onClick={() => handleSetImage(item)}
+                />
+              </ImageListItem>
+            ))} */}
+          </ImageList>
+          {isOpen && (
+            <Modal isOpen={isOpen} setIsOpen={setIsOpen} image={image} />
+          )}
+        </Box>
+      </div>
+    </div>
+  );
 }
 
 export default MySelf;

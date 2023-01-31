@@ -44,7 +44,7 @@ function Modal({ isOpen, setIsOpen, image }) {
           />
         </DialogContent>
         <DialogActions>
-          <CloseButton onClick={() => setIsOpen(false)} autoFocus>
+          <CloseButton onClick={() => setIsOpen(false)}>
             Close
           </CloseButton>
         </DialogActions>

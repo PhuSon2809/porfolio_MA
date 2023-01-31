@@ -12,7 +12,7 @@ function Skills() {
         {skillsRowOne.map((skill) => (
           <div
             key={skill.id}
-            className="box"
+            className="box-1"
             style={{
               background: theme.backgroundColor,
             }}
@@ -33,7 +33,7 @@ function Skills() {
         {skillsRowTow.map((skill) => (
           <div
             key={skill.id}
-            className="box"
+            className="box-2"
             style={{
               background: theme.backgroundColor,
             }}

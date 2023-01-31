@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Box, ImageList, ImageListItem } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -6,9 +6,8 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Tag from "../../components/Tag/Tag";
 import { listProjects } from "../../assets/data/project";
 import { ThemeContext } from "../../features/ThemeContext";
-import "./Detail.scss";
 import Modal from "../../components/Modal/Modal";
-import { useState } from "react";
+import "./Detail.scss";
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -112,7 +111,9 @@ function Detail() {
                 </ImageListItem>
               ))}
             </ImageList>
-            {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} image={image} />}
+            {isOpen && (
+              <Modal isOpen={isOpen} setIsOpen={setIsOpen} image={image} />
+            )}
           </Box>
         </div>
       </div>

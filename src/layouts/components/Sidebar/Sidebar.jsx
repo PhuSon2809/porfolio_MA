@@ -61,7 +61,11 @@ function Sidebar() {
 
           <div className="tags">
             {mySelfs.map((mySelf) => (
-              <Tag key={mySelf.id} variant={mySelf.variant}>
+              <Tag
+                to={`/myself/${mySelf.title}`}
+                key={mySelf.id}
+                variant={mySelf.variant}
+              >
                 {mySelf.title}
               </Tag>
             ))}
