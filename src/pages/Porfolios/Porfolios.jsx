@@ -39,29 +39,29 @@ const itemData = [
     title: "Basketball",
     cols: 2,
   },
-  // {
-  //   img: "./images/porfolio/v1.jpg",
-  //   title: "Fern",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-  //   title: "Mushrooms",
-  //   rows: 2,
-  //   cols: 2,
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-  //   title: "Tomato basil",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-  //   title: "Sea star",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-  //   title: "Bike",
-  //   cols: 2,
-  // },
+  {
+    img: "./images/porfolio/photo2.png",
+    title: "Basketball",
+    cols: 4,
+  },
+ 
+  {
+    img: "./images/porfolio/photo5.png",
+    title: "Basketball",
+    cols: 2,
+    rows: 3,
+  },
+  {
+    img: "./images/porfolio/photo4.jpg",
+    title: "Basketball",
+    cols: 2,
+    rows: 2,
+  },
+  {
+    img: "./images/porfolio/photo1.png",
+    title: "Basketball",
+    cols: 2,
+  },
 ];
 
 function srcset(image, size, rows = 1, cols = 1) {

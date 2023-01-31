@@ -35,7 +35,7 @@ function Activities() {
         <Grid item md={6} className="flex">
           <div className="box-image">
             <div className="img-infor">
-              <img src="./images/activities/myanh.jpg" alt="logo" />
+              <img src="./images/banner/banner4.jpg" alt="logo" />
             </div>
           </div>
         </Grid>

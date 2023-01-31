@@ -24,11 +24,60 @@ export const listProjects = [
           </>,
         ],
         image: "/images/galaxy.jpg",
+        cover: "/images/galaxy3.jpg",
         video: "",
-        listImage: null,
+        listImage: [
+          {
+            img: "/images/pg/pg1.jpg",
+            title: "Breakfast",
+            rows: 2,
+            cols: 4,
+          },
+          {
+            img: "/images/pg/pg2.jpg",
+            title: "Camera",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg3.jpg",
+            title: "Coffee",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg4.jpg",
+            title: "Honey",
+            author: "@arwinneil",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg5.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg6.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg7.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg8.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg9.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+        ],
       },
       {
-        id: 1,
+        id: 2,
         title: "Admin Galaxy Play's Shopee Mall account",
         timeStart: "September 2022 - Now",
         timeEnd: "Present",
@@ -47,8 +96,28 @@ export const listProjects = [
           </>,
         ],
         image: "/images/galaxy.jpg",
+        cover: "/images/galaxy3.jpg",
         video: "",
-        listImage: null,
+        listImage: [
+          {
+            img: "/images/pg/mall1.jpg",
+            title: "Breakfast",
+            rows: 2,
+            cols: 4,
+          },
+          {
+            img: "/images/pg/mall3.jpg",
+            title: "Coffee",
+            rows: 2,
+            cols: 4,
+          },
+          {
+            img: "/images/pg/mall2.jpg",
+            title: "Camera",
+            rows: 2,
+            cols: 4,
+          },
+        ],
       },
     ],
   },
@@ -70,9 +139,7 @@ export const listProjects = [
           "Collaborate with other organizers to build up a project plan and marketing plan.",
           "Managed a 8-member cross-functional (design, content writter, support) team toward the successful launch of the event..",
           "Manage budget, ensure project quality.",
-          <>
-            Expected: <strong>2.000 participants.</strong>
-          </>,
+          <strong>2.000 participants.</strong>,
         ],
         image: "/images/fcamp/fcamp1.jpg",
         cover: "/images/fcamp/fcamp2.jpg",

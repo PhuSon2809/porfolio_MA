@@ -63,14 +63,14 @@ function Infor() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src="/images/activities/myanh.jpg" alt="infor" />
+              <img src="/images/activities/myanh2.jpg" alt="infor" />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <img src="/images/banner/banner1.jpg" alt="infor" />
             </SwiperSlide>
             <SwiperSlide>
               <img src="/images/banner/banner3.jpg" alt="infor" />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </Grid>
