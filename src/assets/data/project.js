@@ -76,6 +76,46 @@ export const listProjects = [
             title: "Hats",
             cols: 1,
           },
+          {
+            img: "/images/pg/pg10.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg11.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg12.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg13.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg14.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg15.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg16.jpg",
+            title: "Hats",
+            cols: 1,
+          },
+          {
+            img: "/images/pg/pg17.jpg",
+            title: "Hats",
+            cols: 1,
+          },
         ],
       },
       {
@@ -263,7 +303,7 @@ export const listProjects = [
             title: "Hats",
             cols: 2,
           },
-        
+
           {
             img: "/images/fcamp/cam2.jpg",
             title: "Hats",
