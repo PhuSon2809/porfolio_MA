@@ -46,7 +46,7 @@ function Certificates() {
                 <IconButton sx={{ color: "#fb2576" }}>
                   <StarIcon />
                 </IconButton>
-                Semester: Spring 2021
+                Semester: Spring 2022
               </p>
               <p
                 className="time"
@@ -57,7 +57,7 @@ function Certificates() {
                 <IconButton sx={{ color: "#fb2576" }}>
                   <StarIcon />
                 </IconButton>
-                Semester: Summer 2021
+                Semester: Summer 2022
               </p>
             </div>
           </div>
