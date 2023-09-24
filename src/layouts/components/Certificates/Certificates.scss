@@ -24,7 +24,7 @@
     .course-content {
       @include flex(flex-start, unset, row);
       gap: 20px;
-      height: 200px;
+      // height: 200px;
 
       img {
         height: 100%;

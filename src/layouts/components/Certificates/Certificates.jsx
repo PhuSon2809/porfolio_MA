@@ -109,7 +109,11 @@ function Certificates() {
               Course
             </p>
             <div className="course-content">
-              <img src="./images/course.png" alt="course" />
+              <img
+                src="./images/course.png"
+                alt="course"
+                style={{ height: "200px" }}
+              />
 
               <div className="content">
                 <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
@@ -131,7 +135,11 @@ function Certificates() {
               </div>
             </div>
             <div className="course-content" style={{ marginTop: "40px" }}>
-              <img src="./images/project_managerment.jpeg" alt="course" />
+              <img
+                src="./images/project_managerment.jpeg"
+                alt="course"
+                style={{ height: "200px" }}
+              />
 
               <div className="content">
                 <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
