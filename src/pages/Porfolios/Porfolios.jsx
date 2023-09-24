@@ -8,6 +8,64 @@ import Modal from "../../components/Modal/Modal";
 const itemData = [
   {
     // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/v6.jpg",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/v5.jpg",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/v4.jpg",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/v3.jpg",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/cao2.png",
+    title: "Breakfast",
+    rows: 4,
+    cols: 2,
+  },
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/dai5.jpg",
+    title: "Breakfast",
+    rows: 1,
+    cols: 2,
+  },
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/cao1.jpg",
+    title: "Breakfast",
+    rows: 3,
+    cols: 2,
+  },
+
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
+    img: "./images/porfolio/v7.png",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    // img: "https://firebasestorage.googleapis.com/v0/b/porfolio-ma.appspot.com/o/porfolio%2Fv1.jpg?alt=media&token=0335164f-c603-4e25-b0bd-315b4b8a0fa7",
     img: "./images/porfolio/v1.jpg",
     title: "Breakfast",
     rows: 2,
@@ -97,10 +155,16 @@ function Porfolios() {
   return (
     <div className="porfolios">
       <div
-        className="title"
+        className="title-wrapper"
         style={{ background: theme.backgroundColor, boxShadow: theme.shadow }}
       >
-        <p>Photoshop/Illustrator</p>
+        <p className="title" style={{ color: theme.colorTitle }}>
+          About
+        </p>
+        <p style={{ color: theme.colorTitle }}>
+          Conceptualize visual design and optimize user experience through each
+          campaign's post and landing page
+        </p>
       </div>
       <div
         className="list-image"

@@ -59,6 +59,39 @@ function Certificates() {
                 </IconButton>
                 Semester: Summer 2022
               </p>
+              <p
+                className="time"
+                style={{
+                  color: theme.color,
+                }}
+              >
+                <IconButton sx={{ color: "#fb2576" }}>
+                  <StarIcon />
+                </IconButton>
+                Semester: Fall 2022
+              </p>
+              <p
+                className="time"
+                style={{
+                  color: theme.color,
+                }}
+              >
+                <IconButton sx={{ color: "#fb2576" }}>
+                  <StarIcon />
+                </IconButton>
+                Semester: Spring 2023
+              </p>
+              <p
+                className="time"
+                style={{
+                  color: theme.color,
+                }}
+              >
+                <IconButton sx={{ color: "#fb2576" }}>
+                  <StarIcon />
+                </IconButton>
+                Semester: Summer 2023
+              </p>
             </div>
           </div>
         </div>
@@ -94,6 +127,49 @@ function Certificates() {
                 </p>
                 <div className="time">
                   <CalendarMonthIcon fontSize="small" /> April 2022
+                </div>
+              </div>
+            </div>
+            <div className="course-content" style={{ marginTop: "40px" }}>
+              <img src="./images/project_managerment.jpeg" alt="course" />
+
+              <div className="content">
+                <p className="title" style={{ color: dark ? "#fff" : "#000" }}>
+                  Project Management Principles and Practices.
+                </p>
+                <p
+                  style={{
+                    color: theme.color,
+                    marginBottom: "2px",
+                  }}
+                >
+                  - Define a project’s scope and write a project plan
+                </p>
+                <p
+                  style={{
+                    color: theme.color,
+                    marginBottom: "2px",
+                  }}
+                >
+                  - Build a work breakdown schedule
+                </p>
+                <p
+                  style={{
+                    color: theme.color,
+                    marginBottom: "2px",
+                  }}
+                >
+                  - Create a project budget
+                </p>
+                <p
+                  style={{
+                    color: theme.color,
+                  }}
+                >
+                  - Identify and manage risks
+                </p>
+                <div className="time">
+                  <CalendarMonthIcon fontSize="small" /> May 2023 - August 2023
                 </div>
               </div>
             </div>

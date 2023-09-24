@@ -30,19 +30,16 @@ function Infor() {
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1500}
-              words={[
-                "Project Management Intern.",
-                "Operations Assistant Intern.",
-              ]}
+              words={["Project Management.", "Operations Assistant."]}
             />
           </h1>
           <p className="discription" style={{ color: theme.color }}>
             As an energetic and hard-working individual, I am always asking
             myself non stop improve. Currently seeking a new challenge in a
             dynamic work environment, especially in the PROJECT MANAGEMENT &
-            OPERATIONS ASSISTANT INTERN department. With the ability to work
-            calmly under pressure, I will contribute to the company's team to
-            achieve its strategic goals.
+            OPERATIONS ASSISTANT department. With the ability to work calmly
+            under pressure, I will contribute to the company's team to achieve
+            its strategic goals.
           </p>
         </div>
       </Grid>
