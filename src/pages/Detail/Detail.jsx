@@ -56,9 +56,11 @@ function Detail() {
             ))}
           </div>
 
-          <p className="title" style={{ color: !dark ? "#000" : "#fff" }}>
-            {project.title}
-          </p>
+          {project.title !== "" && (
+            <p className="title" style={{ color: !dark ? "#000" : "#fff" }}>
+              {project.title}
+            </p>
+          )}
 
           <div className="time">
             <CalendarMonthIcon fontSize="small" /> {project.timeStart}

@@ -1,15 +1,14 @@
-import React, { useContext } from "react";
-import { Grid, IconButton, Typography } from "@mui/material";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { Grid, IconButton, Typography } from "@mui/material";
+import React, { useContext } from "react";
+import { mySelfs } from "../../../assets/data/mySelf";
+import { position } from "../../../assets/data/position";
 import Tag from "../../../components/Tag/Tag";
 import { ThemeContext } from "../../../features/ThemeContext";
 import "./Footer.scss";
-import { position } from "../../../assets/data/position";
-import { mySelfs } from "../../../assets/data/mySelf";
 
 function Footer() {
   const { theme, dark } = useContext(ThemeContext);

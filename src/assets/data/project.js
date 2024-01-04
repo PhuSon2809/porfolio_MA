@@ -1,7 +1,32 @@
 export const listProjects = [
   {
+    id: 3,
+    title: "MEDIA ACCOUNT EXECUTIVE",
+    discription: [],
+    projects: [
+      {
+        id: 1,
+        title: "",
+        timeStart: "October 2023 - December 2023",
+        timeEnd: "Present",
+        positions: [
+          // { id: 1, title: "PG&PB Manager", variant: "pg" }
+        ],
+        discription: [
+          "Work closely with customers (Advertising Director, Marketing Director) and other departments to exploit business opportunities in advertising, PR and other marketing campaigns: Build relationships and partnerships with over 30 five-star hotels and restaurants.",
+          "Targeted advertising sales in Vietnam and abroad through digital, print, exhibitions, and events: Generate $9,000 in revenue for the company.",
+          "Participate in marketing events such as seminars, trade shows, and others.",
+        ],
+        image: "/images/oriental.png",
+        cover: "/images/oriental.png",
+        video: "",
+        listImage: [],
+      },
+    ],
+  },
+  {
     id: 1,
-    title: "PARTNERSHIP KEY ACCOUNT INTERN",
+    title: "PARTNERSHIP KEY ACCOUNT",
     discription: [
       "- Assist manager in Operation, problem solving, Continuous Improvement process.",
       "- Follow up the work and delivery time for assigned projects.",
