@@ -43,7 +43,8 @@ export const listProjects = [
           // { id: 1, title: "PG&PB Manager", variant: "pg" }
         ],
         discription: [
-          "Recruit and Manage a team of 18 PG/PB at Galaxy Cinemas nationwide.",
+          "Recruit and Manage a team of 36 PG/PB at Galaxy Cinemas nationwide.",
+          "Check the knowledge, skills, processes at the store and provide on-the-job training on the content employees have learned nationwide.",
           <>
             Organize training sessions, ensure project quality, problem solving:
             Cost/Redeem decreased{" "}
